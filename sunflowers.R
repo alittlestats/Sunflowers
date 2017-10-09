@@ -24,9 +24,7 @@ dot <- ggplot(data = sunflowers, aes(x = Healthy)) +
      theme_bw() +
      labs(title = "Sunflowers", x = "# of Healthy Plants in Each Sq. Plot") +
      annotate("text",x=106,y=200,label=paste0("Mean=",
-          paste(round(mean(sunflowers$Healthy),2)))) +
-     annotate("text",x=106,y=190,label=paste0("SD=",
-          paste(round(pop.sd(sunflowers$Healthy),2))))     
+          paste(round(mean(sunflowers$Healthy),2))))
 
 plot(dot)
 
